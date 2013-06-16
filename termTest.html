@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>TermTest</title>
+		<script src='http://code.jquery.com/jquery-1.9.1.js'></script>
+        <script type="text/javascript" src='script.js'></script>
+   		<link rel=stylesheet type='text/css' href='stylesheet.css'/>
+
+	</head>
+	
+	<body>
+		<form id='inputform'>
+			<div id='inputbar'>
+				<input type='text' id='term'/>
+				<input type='submit' id='submit'/>
+			</div>
+		</form>
+		<div id='main'>
+			<div id='content'></div>
+			<div id='spacing'></div>
+		</div>
+		
+		<!--<script>
+			$(document).ready(function() {
+				$('#term').focus();
+			});
+			$('form').submit(function() {
+				//Take relevant information from the contents of the HTML elements we need.
+				var toAdd = $('#term').val();
+				var currentContent = $('#content').text();
+				
+				//Update the elements which need updating.
+				$('#content').append('<p>' + toAdd + '</p>');
+				$('#term').val('');
+				
+				//Clean up; scroll to the bottom, exit the function cleanly.
+				window.scrollTo(0,document.body.scrollHeight);
+				return false;
+			});
+		
+		</script>-->
+		
+	</body>
+
+</html>
